@@ -1,0 +1,26 @@
+/* @font-face {
+  font-family: MacPaw Fixel, sans-serif;
+  src: url(/css/Font/MacPawFixel/MacPawFixel-VF.ttf);
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+  box-sizing: border-box;
+}
+
+html {
+  /* 10px (which we want) / by 16px (which we need) = 0.625 = 62.5% */
+
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'MacPaw Fixel', sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #fff;
+  background-color: #141322;
+  overflow-x: hidden;
+}
