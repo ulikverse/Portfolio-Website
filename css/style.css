@@ -62,8 +62,6 @@ Medium: 11px
 }
 
 html {
-  /* 10px (which we want) / by 16px (which we need) = 0.625 = 62.5% */
-
   font-size: 62.5%;
 }
 
@@ -74,4 +72,11 @@ body {
   color: #fff;
   background-color: #141322;
   overflow-x: hidden;
+}
+
+.hero {
+  margin: 0 auto; /* Might delete later, could be wrong for centering */
+  max-width: 130rem;
+  display: grid;
+  grid-template-columns: 1fr;
 }
