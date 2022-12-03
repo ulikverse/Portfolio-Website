@@ -30,10 +30,10 @@ Large: 1.8
 --- 02 COLORS 
 
 – Primary: #141322
-- Secondary: 
-– Tints: 
+- Secondary: #ff4500
 
-– Shadows: 
+– Tints: 
+– Shadows: #e63e00
 
 – Accents: 
 – Greys: #969696
@@ -68,6 +68,7 @@ html {
 
 body {
   font-family: sans-serif; /* 'MacPaw Fixel' */
+  font-size: 1.3rem;
   line-height: 1;
   font-weight: 400;
   color: #fff;
@@ -112,8 +113,36 @@ body {
   margin-bottom: 4.8rem;
 }
 
-.btn {
+a {
   text-decoration: none;
-  /* border: 1px; */
   color: #ff4500;
+}
+
+/* 
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  color: #969696;
+  font-weight: 600;
+} */
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  background-color: transparent;
+  color: #ff4500;
+  padding: 1.4rem 5.2rem;
+  border: solid 1px #ff4500;
+  border-radius: 5px;
+
+  transition: all 0.3s;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #ff4500;
+  color: #fff;
 }
