@@ -30,12 +30,13 @@ Large: 1.8
 --- 02 COLORS 
 
 – Primary: #141322
+- Secondary: 
 – Tints: 
 
 – Shadows: 
 
 – Accents: 
-– Greys: 
+– Greys: #969696
 
 --- 05 SHADOWS
 
@@ -74,9 +75,44 @@ body {
   overflow-x: hidden;
 }
 
+.section-hero {
+  padding: 20rem 0 9.6rem 20rem;
+}
+
 .hero {
   margin: 0 auto; /* Might delete later, could be wrong for centering */
   max-width: 130rem;
   display: grid;
   grid-template-columns: 1fr;
+  align-items: center;
+}
+
+.hero-introduce-text {
+  color: #ff4500;
+  margin-bottom: 2rem;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  font-weight: 600;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+.heading-secondary-color {
+  color: #969696;
+}
+
+.hero-description {
+  /* display: grid; */
+  /* grid-template-columns: 2fr 1fr; */
+  font-size: 1.3rem;
+  line-height: 1.5;
+  color: #969696;
+  margin-bottom: 4.8rem;
+}
+
+.btn {
+  text-decoration: none;
+  /* border: 1px; */
+  color: #ff4500;
 }
