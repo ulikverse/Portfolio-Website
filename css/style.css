@@ -68,7 +68,7 @@ html {
 
 body {
   font-family: 'Lato', sans-serif; /* 'MacPaw Fixel' */
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   line-height: 1;
   font-weight: 400;
   color: #fff;
@@ -96,6 +96,7 @@ body {
   padding: 1.4rem 5.2rem;
   border: solid 1px #ff4500;
   border-radius: 5px;
+  font-size: 1.8rem;
 
   transition: all 0.3s;
 }
@@ -150,7 +151,7 @@ body {
 
 .main-nav-list-item:link,
 .main-nav-list-item:visited {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 300;
   text-decoration: none;
   transition: all 0.3s;
@@ -180,6 +181,7 @@ body {
 
 .hero-introduce-text {
   color: #ff4500;
+  font-size: 1.8rem;
   margin-bottom: 2rem;
 }
 
@@ -191,7 +193,7 @@ body {
   /* display: grid; */
   /* grid-template-columns: 2fr 1fr; */
   max-width: 58.5rem;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   line-height: 1.5;
   color: #969696;
   margin-bottom: 4.8rem;
