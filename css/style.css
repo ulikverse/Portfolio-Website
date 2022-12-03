@@ -33,7 +33,7 @@ Large: 1.8
 - Secondary: #ff4500
 
 – Tints: 
-– Shadows: #e63e00
+– Shadows: #992900
 
 – Accents: 
 – Greys: #969696
@@ -102,12 +102,12 @@ body {
 
 .btn:hover,
 .btn:active {
-  background-color: #ff4500;
+  background-color: #e63e00;
   color: #fff;
 }
 
 /***************************/
-/*  HEADER */
+/* HEADER */
 /***************************/
 
 .header {
@@ -122,6 +122,43 @@ body {
 
 .logo {
   height: 5.4rem;
+}
+
+/***************************/
+/* Navigation */
+/***************************/
+
+.main-nav {
+  font-weight: 400;
+}
+
+.main-nav a {
+  color: #fff;
+}
+
+.main-nav span {
+  color: #ff4500;
+}
+
+.main-nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 3.2rem;
+}
+
+.main-nav-list-item:link,
+.main-nav-list-item:visited {
+  font-size: 2rem;
+  font-weight: 300;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.main-nav-list-item:hover,
+.main-nav-list-item:active {
+  color: #e63e00;
 }
 
 /***************************/
@@ -154,7 +191,7 @@ body {
   /* display: grid; */
   /* grid-template-columns: 2fr 1fr; */
   max-width: 58.5rem;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   line-height: 1.5;
   color: #969696;
   margin-bottom: 4.8rem;
