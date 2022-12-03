@@ -117,7 +117,7 @@ body {
 
   /* Because we want header  to be sticky */
   height: 9.6rem;
-  padding: 3.2rem 3.2rem;
+  padding: 3.2rem 2.4rem;
 }
 
 .logo {
@@ -134,6 +134,7 @@ body {
 
 .hero {
   margin: 0 auto; /* Might delete later, could be wrong for centering */
+  padding: 0 3.4rem;
   max-width: 130rem;
   display: grid;
   grid-template-columns: 1fr;
