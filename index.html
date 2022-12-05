@@ -22,8 +22,9 @@
 
     <header class="header">
       <!-- Change an IMG on hover to /css/img/Logo_filled.svg. Prob. using JS -->
-      <a href="https://yulii-shtel-dev.netlify.app/" class="header-logo-img"
+      <a href="#logo" class="header-logo-img"
         ><img
+          id="logo"
           class="logo"
           alt="Yulii Shtel Developer's Website Logo"
           src="/css/img/Logo.svg"
@@ -62,7 +63,7 @@
         <div class="hero">
           <div class="hero-text-box">
             <p class="hero-introduce-text">Hello, my name is</p>
-            <h1 class="heading-primary">
+            <h1 class="hero-heading-primary">
               Yulii Shtel <br />
               <span class="heading-secondary-color">A Front-end Developer</span>
             </h1>
@@ -174,7 +175,7 @@
                 class="skills-skill-logo"
                 alt="Logo of the skill three"
               />
-              <h3 class="skills-skill-header">JavaScript(ES6+)</h3>
+              <h3 class="skills-skill-header">JavaScript (ES6+)</h3>
               <p class="skills-skill-text">
                 I can give your site the breath of life that it needs, be it
                 date functions, APIs, responsiveness, adding and removing
@@ -203,16 +204,65 @@
 
       <!-- ------ Contact ------ -->
 
-      <section id="contact-section" class="contact-section"></section>
+      <section id="contact-section" class="contact-section">
+        <div class="contact">
+          <div class="contact-text-box">
+            <p class="contact-introduce-text">03. Contact Me</p>
+            <h1 class="contact-heading-primary">Get In Touch</h1>
+            <p class="contact-description">
+              I do hope my display up until this point was not a waste of your
+              time. Whether you have a question or just want to say hi, I&#39;ll
+              try my best to get back to you!
+            </p>
+            <a
+              target="_blank"
+              href="/Yulii_Shtel_CV_2022_English.pdf"
+              class="btn"
+              >Hire me!</a
+            >
+          </div>
+        </div>
+      </section>
 
       <!-- ------ Footer ------ -->
 
-      <section class="footer"></section>
-
-      <!--
-
-      Then choose IMG class with CSS class selector and set: width: 100% 
-
-    --></main>
+      <section class="footer">
+        <p class="footer">Powered by @uuuuulik</p>
+      </section>
+    </main>
+    <!-- ------ Socials ------ -->
+    <div class="socials">
+      <a target="_blank" href="https://www.linkedin.com/in/yuliishtel/"
+        ><img
+          src="/css/img/socials/LinkedIn.svg"
+          class="socials-logo"
+          alt="Social Media Link: LinkedIn"
+      /></a>
+      <a target="_blank" href="https://github.com/uuuuulik">
+        <!--  -->
+        <img
+          src="/css/img/socials/GitHub.svg"
+          class="socials-logo"
+          alt="Social Media Link: GitHub"
+      /></a>
+      <a target="_blank" href="https://twitter.com/uuuuulik">
+        <!--  -->
+        <img
+          src="/css/img/socials/Twitter.svg"
+          class="socials-logo"
+          alt="Social Media Link: Twitter"
+        />
+        <!--  -->
+      </a>
+      <a target="_blank" href="mailto:ulik1shtel@gmail.com">
+        <!--  -->
+        <img
+          src="/css/img/socials/Email.svg"
+          class="socials-logo"
+          alt="Social Media Link: Email"
+      /></a>
+      <!--  -->
+      <img src="/css/img/socials/Line 1.svg" />
+    </div>
   </body>
 </html>

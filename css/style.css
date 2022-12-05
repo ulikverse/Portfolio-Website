@@ -68,6 +68,8 @@ html {
 }
 
 body {
+  /* position: relative; */
+
   font-family: 'Lato', sans-serif; /* 'MacPaw Fixel' */
   font-size: 1.6rem;
   line-height: 1;
@@ -87,7 +89,7 @@ body {
 /* GENERAL REUSABLE COMPONENTS */
 /***************************/
 
-.heading-primary {
+.hero-heading-primary {
   font-size: 5.2rem;
   font-weight: 600;
   line-height: 1.05;
@@ -351,6 +353,76 @@ a:active {
 /* CONTACT SECTION */
 /***************************/
 
+.contact-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* padding: 11rem 20rem 9.6rem 20rem; */
+  padding: 11rem 0 9.6rem 0;
+  margin: 16rem 0 9.6rem 0;
+  text-align: center;
+}
+
+.contact-introduce-text {
+  color: #ff4500;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.contact-heading-primary {
+  display: flex;
+  font-size: 4rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.2rem;
+}
+
+.contact-introduce-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-introduce-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.contact-description {
+  max-width: 58.5rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #969696;
+  margin-bottom: 4.8rem;
+}
+
 /***************************/
 /* FOOTER */
 /***************************/
+
+.footer {
+  display: grid;
+  justify-content: center;
+
+  color: #969696;
+  margin-bottom: 1rem;
+}
+
+/***************************/
+/* SOCIALS */
+/***************************/
+
+.socials {
+  position: fixed;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 4rem;
+  margin-left: 4rem;
+  z-index: 10;
+}
