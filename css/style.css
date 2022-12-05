@@ -74,10 +74,14 @@ body {
   color: #fff;
   background-color: #141322;
   overflow-x: hidden;
+
+  margin: 0 auto;
+  padding: 0 3.4rem;
+  max-width: 130rem;
 }
 
 /***************************/
-/*  GENERAL REUSABLE COMPONENTS */
+/* GENERAL REUSABLE COMPONENTS */
 /***************************/
 
 .heading-primary {
@@ -93,7 +97,7 @@ body {
   text-decoration: none;
   background-color: transparent;
   color: #ff4500;
-  padding: 1.4rem 5.2rem;
+  padding: 1.4rem 4.2rem;
   border: solid 1px #ff4500;
   border-radius: 5px;
   font-size: 1.8rem;
@@ -131,6 +135,8 @@ body {
 
 .main-nav {
   font-weight: 400;
+  /* position: sticky;
+  top: 0; */
 }
 
 .main-nav a {
@@ -147,6 +153,9 @@ body {
   align-items: center;
   list-style: none;
   gap: 3.2rem;
+
+  position: sticky;
+  top: 0;
 }
 
 .main-nav-list-item:link,
@@ -163,17 +172,15 @@ body {
 }
 
 /***************************/
-/*  HERO SECTION */
+/* HERO SECTION */
 /***************************/
 
 .section-hero {
   padding: 11rem 20rem 9.6rem 20rem;
+  margin-bottom: 9.6rem;
 }
 
 .hero {
-  margin: 0 auto; /* Might delete later, could be wrong for centering */
-  padding: 0 3.4rem;
-  max-width: 130rem;
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
@@ -194,7 +201,8 @@ body {
   /* grid-template-columns: 2fr 1fr; */
   max-width: 58.5rem;
   font-size: 1.8rem;
-  line-height: 1.5;
+  font-weight: 400;
+  line-height: 1.7;
   color: #969696;
   margin-bottom: 4.8rem;
 }
@@ -213,3 +221,63 @@ a:active {
   color: #969696;
   font-weight: 600;
 } */
+
+/***************************/
+/* ABOUT SECTION */
+/***************************/
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 9.6rem;
+}
+
+.about-img {
+  width: 100%;
+}
+
+.about-heading {
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+
+.about-heading {
+  color: #fff;
+}
+
+.about-heading span {
+  color: #ff4500;
+}
+
+.about-text-box {
+  max-width: 58.5rem;
+  font-size: 1.8rem;
+  line-height: 1.7;
+  font-weight: 400;
+  color: #969696;
+  margin-bottom: 4.8rem;
+}
+
+.about-list {
+  list-style: inside;
+  list-style: none;
+}
+
+.about-list li::before {
+  content: '\2022';
+  color: #ff4500;
+  font-weight: light;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.about-img {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+}
