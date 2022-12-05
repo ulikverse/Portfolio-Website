@@ -404,12 +404,17 @@ a:active {
 /* FOOTER */
 /***************************/
 
-.footer {
+.section-footer {
   display: grid;
   justify-content: center;
+}
 
+.footer {
+  display: block;
+
+  text-decoration: none;
   color: #969696;
-  margin-bottom: 1rem;
+  margin-bottom: 4rem;
 }
 
 /***************************/
