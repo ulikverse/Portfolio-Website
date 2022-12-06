@@ -429,22 +429,23 @@ a:active {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  margin-bottom: 4rem;
+  /* margin-bottom: 4rem; */
   margin-left: 4rem;
   z-index: 10;
 }
 
 .socials-line {
-  height: 2px;
-  background: #e63e00;
+  /* height: 2px;
+  width: 20px; */
+
+  width: 1px;
+  height: 120px;
+  margin: 0px auto;
+  background: #ff4500;
+  /* transform: rotate(90deg); */
 }
 
-.socials-logo:link,
-.socials-logo:visited {
-  transition: all 0.3s;
-}
-
-.socials-logo:hover,
-.socials-logo:active {
-  color: #ff4500;
+.socials-logo:hover {
+  filter: invert(36%) sepia(77%) saturate(4320%) hue-rotate(1deg)
+    brightness(101%) contrast(104%);
 }
