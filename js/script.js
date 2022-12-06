@@ -23,8 +23,8 @@ const stickyNav = function (entries) {
 
 const headerObserver = new IntersectionObserver(stickyNav, {
   root: null,
-  treshold: 0,
-  rootMargin: `-40px`,
+  treshold: 1,
+  // rootMargin: `-20px`,
 });
 
 headerObserver.observe(header);
