@@ -120,14 +120,16 @@ body {
 /* HEADER */
 /***************************/
 
-.header {
+.header-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   /* Because we want header  to be sticky */
   height: 9.6rem;
+  width: 100%;
   padding: 3.2rem 2.4rem;
+  z-index: 100;
 }
 
 .logo {
@@ -156,6 +158,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
   list-style: none;
   gap: 3.2rem;
 
@@ -174,6 +177,11 @@ body {
 .main-nav-list-item:hover,
 .main-nav-list-item:active {
   color: #ff4500;
+}
+
+.header-nav.sticky {
+  position: fixed;
+  background-color: hsl(244, 28%, 10%, 0.9);
 }
 
 /***************************/
