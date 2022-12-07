@@ -145,6 +145,13 @@ body {
 /* Navigation */
 /***************************/
 
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: hsl(244, 28%, 10%, 0.9);
+}
+
 .main-nav {
   font-weight: 400;
   /* position: sticky;
@@ -184,11 +191,11 @@ body {
   color: #ff4500;
 }
 
-.header-nav.sticky {
-  position: fixed;
+/* .header-nav.sticky {
+  /* position: fixed;
   top: 0;
-  background-color: hsl(244, 28%, 10%, 0.9);
-}
+  background-color: hsl(244, 28%, 10%, 0.9); 
+/* }  */
 
 /***************************/
 /* HERO SECTION */
