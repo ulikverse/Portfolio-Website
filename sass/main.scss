@@ -1,8 +1,8 @@
-@charset "UTF-8";
 /* @font-face {
   font-family: MacPaw Fixel, sans-serif;
   src: url(/css/Font/MacPawFixel/MacPawFixel-VF.ttf);
 } */
+
 /*
 
 --- 01 TYPOGRAPHY
@@ -55,6 +55,11 @@ Medium: 11px
 
 
 */
+
+$color-primary: #141322;
+$color-secondary: #ff4500;
+$color-grey-main: #969696;
+
 * {
   margin: 0;
   padding: 0;
@@ -68,12 +73,13 @@ html {
 
 body {
   /* position: relative; */
-  font-family: "Lato", sans-serif; /* 'MacPaw Fixel' */
+
+  font-family: 'Lato', sans-serif; /* 'MacPaw Fixel' */
   font-size: 1.6rem;
   line-height: 1;
   font-weight: 400;
   color: #fff;
-  background-color: #141322;
+  background-color: $color-primary;
   overflow-x: hidden;
 }
 
@@ -86,6 +92,7 @@ body {
 /***************************/
 /* GENERAL REUSABLE COMPONENTS */
 /***************************/
+
 .hero-heading-primary {
   font-size: 5.2rem;
   font-weight: 600;
@@ -98,11 +105,12 @@ body {
   display: inline-block;
   text-decoration: none;
   background-color: transparent;
-  color: #ff4500;
+  color: $color-secondary;
   padding: 1.4rem 4.2rem;
-  border: solid 1px #ff4500;
+  border: solid 1px $color-secondary;
   border-radius: 5px;
   font-size: 1.6rem;
+
   transition: all 0.3s;
 }
 
@@ -120,10 +128,12 @@ body {
 /***************************/
 /* HEADER */
 /***************************/
+
 .header-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   /* Because we want header  to be sticky */
   height: 9.6rem;
   width: 100%;
@@ -138,11 +148,12 @@ body {
 /***************************/
 /* Navigation */
 /***************************/
+
 .sticky {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background-color: hsla(244deg, 28%, 10%, 0.9);
+  background-color: hsl(244, 28%, 10%, 0.9);
 }
 
 .main-nav {
@@ -156,15 +167,17 @@ body {
 }
 
 .main-nav span {
-  color: #ff4500;
+  color: $color-secondary;
 }
 
 .main-nav-list {
   display: flex;
   justify-content: center;
   align-items: center;
+
   list-style: none;
   gap: 3.2rem;
+
   position: sticky;
   top: 0;
 }
@@ -179,7 +192,7 @@ body {
 
 .main-nav-list-item:hover,
 .main-nav-list-item:active {
-  color: #ff4500;
+  color: $color-secondary;
 }
 
 /* .header-nav.sticky {
@@ -187,9 +200,11 @@ body {
   top: 0;
   background-color: hsl(244, 28%, 10%, 0.9); 
 /* }  */
+
 /***************************/
 /* HERO SECTION */
 /***************************/
+
 .section-hero {
   /* padding: 11rem 20rem 9.6rem 20rem; */
   padding: 11rem 0 9.6rem 0;
@@ -204,13 +219,13 @@ body {
 }
 
 .hero-introduce-text {
-  color: #ff4500;
+  color: $color-secondary;
   font-size: 1.6rem;
   margin-bottom: 2rem;
 }
 
 .heading-secondary-color {
-  color: #969696;
+  color: $color-grey-main;
 }
 
 .hero-description {
@@ -220,13 +235,13 @@ body {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.7;
-  color: #969696;
+  color: $color-grey-main;
   margin-bottom: 4.8rem;
 }
 
 a {
   text-decoration: none;
-  color: #ff4500;
+  color: $color-secondary;
 }
 
 /* 
@@ -238,9 +253,11 @@ a:active {
   color: #969696;
   font-weight: 600;
 } */
+
 /***************************/
 /* ABOUT SECTION */
 /***************************/
+
 .about {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -265,7 +282,7 @@ a:active {
 }
 
 .about-heading span {
-  color: #ff4500;
+  color: $color-secondary;
 }
 
 .about-text-box {
@@ -273,7 +290,7 @@ a:active {
   font-size: 1.6rem;
   line-height: 1.7;
   font-weight: 400;
-  color: #969696;
+  color: $color-grey-main;
   margin-bottom: 4.8rem;
 }
 
@@ -283,8 +300,8 @@ a:active {
 }
 
 .about-list li::before {
-  content: "•";
-  color: #ff4500;
+  content: '\2022';
+  color: $color-secondary;
   font-weight: light;
   display: inline-block;
   width: 1em;
@@ -300,6 +317,7 @@ a:active {
 /***************************/
 /* SKILLS SECTION */
 /***************************/
+
 .skills {
   display: grid;
   grid-template-columns: 45fr 55fr;
@@ -321,7 +339,7 @@ a:active {
 }
 
 .skills-heading span {
-  color: #ff4500;
+  color: $color-secondary;
 }
 
 .skills-text-box {
@@ -329,7 +347,7 @@ a:active {
   font-size: 1.6rem;
   line-height: 1.7;
   font-weight: 400;
-  color: #969696;
+  color: $color-grey-main;
   margin-bottom: 4.8rem;
   padding: 9.6rem 9.6rem 9.6rem 0;
 }
@@ -354,16 +372,18 @@ a:active {
   font-size: 1.6rem;
   line-height: 1.6;
   margin-bottom: 1.2rem;
-  color: #969696;
+  color: $color-grey-main;
 }
 
 /***************************/
 /* CONTACT SECTION */
 /***************************/
+
 .section-contact {
   display: flex;
   align-items: center;
   justify-content: center;
+
   /* padding: 11rem 20rem 9.6rem 20rem; */
   padding: 11rem 0 9.6rem 0;
   margin: 16rem 0 9.6rem 0;
@@ -371,7 +391,7 @@ a:active {
 }
 
 .contact-introduce-text {
-  color: #ff4500;
+  color: $color-secondary;
   font-size: 1.6rem;
   margin-bottom: 2rem;
 }
@@ -402,13 +422,14 @@ a:active {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.7;
-  color: #969696;
+  color: $color-grey-main;
   margin-bottom: 4.8rem;
 }
 
 /***************************/
 /* FOOTER */
 /***************************/
+
 .section-footer {
   display: grid;
   justify-content: center;
@@ -416,18 +437,21 @@ a:active {
 
 .footer {
   display: block;
+
   text-decoration: none;
-  color: #969696;
+  color: $color-grey-main;
   margin-bottom: 2rem;
 }
 
 /***************************/
 /* SOCIALS */
 /***************************/
+
 .socials {
   position: fixed;
   bottom: 0;
   left: 0;
+
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -439,10 +463,12 @@ a:active {
 .socials-line {
   /* height: 2px;
   width: 20px; */
+
   width: 1px;
   height: 120px;
   margin: 0px auto;
-  background: #ff4500;
+  background: $color-secondary;
+
   /* transform: rotate(90deg); */
 }
 
@@ -451,8 +477,7 @@ a:active {
 }
 
 .socials-logo:hover {
-  filter: invert(36%) sepia(77%) saturate(4320%) hue-rotate(1deg) brightness(101%) contrast(104%);
+  filter: invert(36%) sepia(77%) saturate(4320%) hue-rotate(1deg)
+    brightness(101%) contrast(104%);
   transform: translateY(-0.3rem);
 }
-
-/*# sourceMappingURL=style.css.map */

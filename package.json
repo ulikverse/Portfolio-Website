@@ -4,7 +4,7 @@
   "description": "This is my personal website with one and only purpose - to tell about myself a bit, show my previous work and show my skills",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass": "sass sass/main.scss css/style.css -w"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/uuuuulik/Portfolio-Website/issues"
   },
-  "homepage": "https://github.com/uuuuulik/Portfolio-Website#readme"
+  "homepage": "https://github.com/uuuuulik/Portfolio-Website#readme",
+  "devDependencies": {
+    "sass": "^1.56.1"
+  }
 }
