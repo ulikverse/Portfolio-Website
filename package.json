@@ -1,0 +1,22 @@
+{
+  "name": "yulii-shtel-dev",
+  "version": "1.0.0",
+  "description": "This is my personal website with one and only purpose - to tell about myself a bit, show my previous work and show my skills",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uuuuulik/Portfolio-Website.git"
+  },
+  "keywords": [
+    "cv"
+  ],
+  "author": "Yulii Shtel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uuuuulik/Portfolio-Website/issues"
+  },
+  "homepage": "https://github.com/uuuuulik/Portfolio-Website#readme"
+}
