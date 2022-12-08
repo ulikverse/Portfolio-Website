@@ -1,5 +1,9 @@
 'use strict';
 
+if (module.hot) {
+  module.hot.accept();
+}
+
 const sectionHero = document.querySelector('.section-hero');
 const sectionAbout = document.querySelector('.about-section');
 const sectionSkills = document.querySelector('.skills-section');

@@ -2,9 +2,10 @@
   "name": "yulii-shtel-dev",
   "version": "1.0.0",
   "description": "This is my personal website with one and only purpose - to tell about myself a bit, show my previous work and show my skills",
-  "main": "index.js",
   "scripts": {
-    "compile:sass": "sass sass/main.scss css/style.css -w"
+    "compile:sass": "sass sass/main.scss css/style.css -w",
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   },
   "homepage": "https://github.com/uuuuulik/Portfolio-Website#readme",
   "devDependencies": {
+    "parcel": "^2.8.1",
     "sass": "^1.56.1"
   }
 }
