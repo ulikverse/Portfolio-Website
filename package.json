@@ -1,7 +1,7 @@
 {
   "name": "yulii-shtel-dev",
   "version": "1.0.0",
-  "description": "This is my personal website with one and only purpose - to tell about myself a bit, show my previous work and show my skills",
+  "description": "This is personal website of Yulii Shtel, Front-end Developer, with one and only purpose - to tell about myself a bit, show my previous work and show my skills",
   "scripts": {
     "compile:sass": "sass sass/main.scss css/style.css -w",
     "start": "parcel index.html",
