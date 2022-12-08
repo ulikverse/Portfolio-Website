@@ -208,8 +208,7 @@ body {
 .section-hero {
   /* padding: 11rem 20rem 9.6rem 20rem; */
   padding: 11rem 0 9.6rem 0;
-  margin-bottom: 9.6rem;
-  margin-top: 2rem;
+  margin: 2rem 0 2rem 0;
 }
 
 .hero {
@@ -258,12 +257,16 @@ a:active {
 /* ABOUT SECTION */
 /***************************/
 
+.section-about {
+  margin: 0 0 9.6rem 0;
+  padding: 11rem 0 9.6rem 0;
+}
+
 .about {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
-  margin-bottom: 9.6rem;
 }
 
 .about-img {
@@ -318,13 +321,16 @@ a:active {
 /* SKILLS SECTION */
 /***************************/
 
+.section-skills {
+  margin: 10rem 0 0 0;
+  padding: 11rem 0 9.6rem 0;
+}
+
 .skills {
   display: grid;
   grid-template-columns: 45fr 55fr;
   justify-content: center;
   align-items: center;
-  margin-top: 9.6rem;
-  margin-bottom: 9.6rem;
 }
 
 .skills-heading {
@@ -386,7 +392,7 @@ a:active {
 
   /* padding: 11rem 20rem 9.6rem 20rem; */
   padding: 11rem 0 9.6rem 0;
-  margin: 16rem 0 9.6rem 0;
+  margin: 0 0 9.6rem 0;
   text-align: center;
 }
 
