@@ -60,6 +60,8 @@ $color-primary: #141322;
 $color-secondary: #ff4500;
 $color-grey-main: #969696;
 
+@import 'querries.scss';
+
 * {
   margin: 0;
   padding: 0;
