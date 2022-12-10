@@ -146,10 +146,10 @@ display skills description at the top, while skills items at the bottom (maybe d
   }
 }
 /***************************/
-/* BELOW 550px (Phones) */
+/* BELOW 434px (iPhones) */
 /***************************/
 /*
-** 500px || 34em ** 
+** 500px || 27em ** 
 
 - header: no changes
 
@@ -167,7 +167,10 @@ display skills description at the top, while skills items at the bottom (maybe d
 
 - socials: ++
 */
-@media (max-width: 34em) {
+@media (max-width: 27em) {
+  .main {
+    padding: 0 5rem 0 6rem !important;
+  }
   .main-nav {
     display: none;
   }
@@ -190,12 +193,14 @@ display skills description at the top, while skills items at the bottom (maybe d
     margin-bottom: 3.2rem !important;
   }
   .skills-container {
+    display: flex !important;
+    flex-direction: column;
     padding: 3.2rem;
   }
   .socials {
     position: absolute !important;
     bottom: 15rem !important;
-    left: 11rem !important;
+    left: 7rem !important;
     display: flex;
     flex-direction: row !important;
     gap: 4rem !important;
