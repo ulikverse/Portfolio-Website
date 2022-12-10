@@ -197,6 +197,9 @@ display skills description at the top, while skills items at the bottom (maybe d
     flex-direction: column;
     padding: 3.2rem;
   }
+  .section-contact {
+    padding: 0 0 9.6rem 0;
+  }
   .socials {
     position: absolute !important;
     bottom: 15rem !important;
