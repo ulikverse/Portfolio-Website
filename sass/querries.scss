@@ -1,1 +1,191 @@
+/* rem and em do NOT depend of htnl font-size in media queries! 1rem = 1em = 16px
 
+Use em in media querries! 
+
+Every time you want to sen up media querry, divide it by 16 and use as em unit.
+
+*/
+
+/***************************/
+/* BELOW 1072px (Smaller Desktops / Big Tablets) */
+/***************************/
+
+/*
+** 1080px || 67em ** 
+
+- header: no changes
+
+- navigation: no changes
+
+- section hero: no changes
+
+- section about: 
+make container smaller (max-width: 120rem)
+
+- section skills: 
+display skills description at the top, while skills items at the bottom (maybe display: flex; & flex-direction: column ????)
+
+- section contact: no changes
+
+- footer: no changes
+
+- socials: no changes
+*/
+
+@media (max-width: 67em) {
+  // 1072px / 16px = 67.5em
+
+  // Section About
+  .section-about {
+    max-width: 80rem;
+  }
+
+  // Section Skills
+  .skills {
+    display: flex !important;
+    flex-direction: column;
+  }
+
+  .skills-text-box {
+    padding: 0 !important;
+    margin-bottom: 3.2rem !important;
+  }
+
+  .skills-container {
+    padding: 3.2rem;
+  }
+}
+
+/***************************/
+/* BELOW 900px (Tablets) */
+/***************************/
+
+/* 
+** 900px || 56em ** 
+
+- header: no changes
+
+- navigation: no changes
+
+- section hero: no changes
+
+- section about: display about description at the top, while about IMG at the bottom
+
+- section skills: same as 67em
+
+- section contact: no changes
+
+- footer: no changes
+
+- socials: no changes
+*/
+
+@media (max-width: 56em) {
+  // 900px / 16px = 56em
+
+  // Section About
+  .about {
+    display: flex !important;
+    flex-direction: column;
+  }
+
+  .about-img-box {
+    max-width: 100%;
+    min-width: 360px;
+  }
+
+  // Section Skills
+  .skills {
+    display: flex !important;
+    flex-direction: column;
+  }
+
+  .skills-text-box {
+    padding: 0 !important;
+    margin-bottom: 3.2rem !important;
+  }
+
+  .skills-container {
+    padding: 3.2rem;
+  }
+}
+
+/***************************/
+/* BELOW 550px (Phones) */
+/***************************/
+
+/*
+** 500px || 34em ** 
+
+- header: no changes
+
+- navigation: hide navigation
+
+- section hero: no changes
+
+- section about: same as 56em & 67em 
+
+- section skills: ++
+
+- section contact: no changes
+
+- footer: no changes
+
+- socials: ++
+*/
+
+@media (max-width: 34em) {
+  // 550px / 16px = 34em
+
+  // Header
+
+  // Navigation
+  .main-nav {
+    display: none;
+  }
+
+  // Section About
+
+  body {
+    position: relative;
+  }
+
+  .about {
+    display: flex !important;
+    flex-direction: column;
+  }
+
+  .about-img-box {
+    max-width: 100%;
+  }
+
+  // Section Skills
+  .skills {
+    display: flex !important;
+    flex-direction: column;
+  }
+
+  .skills-text-box {
+    padding: 0 !important;
+    margin-bottom: 3.2rem !important;
+  }
+
+  .skills-container {
+    padding: 3.2rem;
+  }
+
+  // Socials
+  .socials {
+    position: absolute !important;
+    bottom: 15rem !important;
+    left: 11rem !important;
+
+    display: flex;
+    flex-direction: row !important;
+    gap: 4rem !important;
+  }
+
+  .socials-line {
+    display: none !important;
+  }
+}
