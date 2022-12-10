@@ -146,6 +146,71 @@ display skills description at the top, while skills items at the bottom (maybe d
   }
 }
 /***************************/
+/* BELOW 650px (Big Phones) */
+/***************************/
+/*
+- header: no changes
+
+- navigation: hide navigation
+
+- section hero: no changes
+
+- section about: same as 56em & 67em 
+
+- section skills: ++
+
+- section contact: no changes
+
+- footer: no changes
+
+- socials: ++
+*/
+@media (max-width: 40em) {
+  .main {
+    padding: 0 8rem 0 6rem !important;
+  }
+  .nav-btn {
+    display: none;
+  }
+  body {
+    position: relative;
+  }
+  .about {
+    display: flex !important;
+    flex-direction: column;
+  }
+  .about-img-box {
+    max-width: 100%;
+  }
+  .skills {
+    display: flex !important;
+    flex-direction: column;
+  }
+  .skills-text-box {
+    padding: 0 !important;
+    margin-bottom: 3.2rem !important;
+  }
+  .skills-container {
+    display: flex !important;
+    flex-direction: column;
+    padding: 3.2rem;
+  }
+  .section-contact {
+    padding: 0 0 9.6rem 0;
+  }
+  .socials {
+    position: absolute !important;
+    bottom: 15rem !important;
+    left: 13rem !important;
+    display: flex;
+    flex-direction: row !important;
+    gap: 4rem !important;
+  }
+  .socials-line {
+    display: none !important;
+  }
+}
+/***************************/
 /* BELOW 434px (iPhones) */
 /***************************/
 /*
