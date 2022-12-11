@@ -113,7 +113,7 @@ body {
   border-radius: 5px;
   font-size: 1.6rem;
 
-  transition: all 0.3s;
+  transition: all 0.2s;
 }
 
 .btn:hover,
@@ -131,7 +131,7 @@ body {
   justify-content: space-between;
   align-items: center;
 
-  /* Because we want header  to be sticky */
+  /* Because I want header to be sticky */
   height: 9.6rem;
   width: 100%;
   padding: 3.2rem 2.4rem;
@@ -173,7 +173,8 @@ body {
   list-style: none;
   gap: 3.2rem;
 
-  position: sticky;
+  // ?
+  // position: sticky;
   top: 0;
 }
 
@@ -182,7 +183,7 @@ body {
   font-size: 1.6rem;
   font-weight: 300;
   text-decoration: none;
-  transition: all 0.3s;
+  transition: all 0.4s;
 }
 
 .main-nav-list-item:hover,
@@ -206,11 +207,11 @@ body {
   margin: 2rem 0 2rem 0;
 }
 
-.hero {
-  display: grid;
-  grid-template-columns: 1fr;
-  align-items: center;
-}
+// .hero {
+//   display: grid;
+//   grid-template-columns: 1fr;
+//   align-items: center;
+// }
 
 .hero-introduce-text {
   color: $color-secondary;
@@ -458,7 +459,11 @@ a:active {
   gap: 2rem;
   /* margin-bottom: 4rem; */
   margin-left: 4rem;
-  z-index: 10;
+  // z-index: 1000;
+}
+
+.socials a {
+  z-index: 9999;
 }
 
 .socials-line {
@@ -474,11 +479,10 @@ a:active {
 }
 
 .socials-logo {
-  transition: all 0.3s;
+  transition: all 0.2s;
 }
 
-.socials-logo:hover,
-.socials-logo:active {
+.socials-logo:hover {
   filter: invert(36%) sepia(77%) saturate(4320%) hue-rotate(1deg)
     brightness(101%) contrast(104%);
   transform: translateY(-0.3rem);

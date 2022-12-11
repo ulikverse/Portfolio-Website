@@ -82,3 +82,12 @@ allLinks.forEach(function (link) {
 //   sectionObserver.observe(section);
 //   section.classList.add('section--hidden');
 // });
+
+/*
+// Testing code
+window.onload = function () {
+  document.getElementById('btn1').onclick = function () {
+    console.log('button was clicked');
+  };
+};
+*/
