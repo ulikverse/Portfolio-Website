@@ -333,11 +333,6 @@ body {
   color: #fff;
 }
 
-.section--hidden {
-  opacity: 0;
-  transform: translateY(8rem);
-}
-
 /***************************/
 /* HEADER */
 /***************************/
@@ -368,8 +363,6 @@ body {
 
 .main-nav {
   font-weight: 400;
-  /* position: sticky;
-  top: 0; */
 }
 
 .main-nav a {
@@ -674,10 +667,11 @@ a:active {
 }
 
 .socials-logo {
-  transition: all 0.4s;
+  transition: all 0.3s;
 }
 
-.socials-logo:hover {
+.socials-logo:hover,
+.socials-logo:active {
   filter: invert(36%) sepia(77%) saturate(4320%) hue-rotate(1deg) brightness(101%) contrast(104%);
   transform: translateY(-0.3rem);
 }
