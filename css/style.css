@@ -285,6 +285,7 @@ display skills description at the top, while skills items at the bottom (maybe d
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -295,7 +296,6 @@ body {
   font-weight: 400;
   color: #fff;
   background-color: #141322;
-  overflow-x: hidden;
 }
 
 .main {
@@ -355,7 +355,6 @@ body {
 /* Navigation */
 /***************************/
 .sticky {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   background-color: hsla(244deg, 28%, 10%, 0.9);
@@ -395,11 +394,6 @@ body {
   color: #ff4500;
 }
 
-/* .header-nav.sticky {
-  /* position: fixed;
-  top: 0;
-  background-color: hsl(244, 28%, 10%, 0.9); 
-/* }  */
 /***************************/
 /* HERO SECTION */
 /***************************/

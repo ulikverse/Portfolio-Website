@@ -70,7 +70,7 @@ $color-grey-main: #969696;
 
 html {
   font-size: 62.5%;
-  // scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -82,7 +82,7 @@ body {
   font-weight: 400;
   color: #fff;
   background-color: $color-primary;
-  overflow-x: hidden;
+  // overflow-x: hidden;
 }
 
 .main {
@@ -147,7 +147,7 @@ body {
 /***************************/
 
 .sticky {
-  position: -webkit-sticky;
+  // position: -webkit-sticky;
   position: sticky;
   top: 0;
   background-color: hsl(244, 28%, 10%, 0.9);
@@ -191,12 +191,6 @@ body {
   color: $color-secondary;
 }
 
-/* .header-nav.sticky {
-  /* position: fixed;
-  top: 0;
-  background-color: hsl(244, 28%, 10%, 0.9); 
-/* }  */
-
 /***************************/
 /* HERO SECTION */
 /***************************/
@@ -226,6 +220,7 @@ body {
 .hero-description {
   /* display: grid; */
   /* grid-template-columns: 2fr 1fr; */
+
   max-width: 58.5rem;
   font-size: 1.6rem;
   font-weight: 400;
