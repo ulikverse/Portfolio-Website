@@ -30,33 +30,32 @@
     <!-- Header  -->
 
     <header class="header sticky">
-      <div class="header-nav">
+      <div class="header__nav">
         <!-- Change an IMG on hover to /css/img/Logo_filled.svg. Prob. using JS -->
-        <a href="#" class="header-logo-img"
+        <a href="#" class="header__logo-img"
           ><img
             id="logo"
-            class="logo"
             alt="Yulii Shtel Developer's Website Logo"
             src="/css/img/Logo.svg"
         /></a>
-        <nav class="main-nav">
-          <ul class="main-nav-list">
+        <nav class="header__main-nav">
+          <ul class="header__main-nav--list">
             <li>
-              <a href="#section-about" class="main-nav-list-item"
+              <a href="#section-about" class="header__main-nav--list-item"
                 ><span>01. </span>About</a
               >
             </li>
             <li>
-              <a href="#section-skills" class="main-nav-list-item"
+              <a href="#section-skills" class="header__main-nav--list-item"
                 ><span>02. </span>Skills</a
               >
             </li>
             <li>
-              <a href="#section-contact" class="main-nav-list-item"
+              <a href="#section-contact" class="header__main-nav--list-item"
                 ><span>03. </span>Contact</a
               >
             </li>
-            <span class="nav-btn"
+            <span class="nav__btn"
               ><a
                 target="_blank"
                 href="https://github.com/uuuuulik?tab=repositories"
@@ -70,20 +69,22 @@
     </header>
 
     <main class="main">
-      <!-- Hero   -->
+      <!-- Hero Section  -->
 
-      <section id="hero-section" class="section-hero">
+      <section id="section-hero" class="section-hero">
         <div class="hero">
-          <div class="hero-text-box">
-            <p class="hero-introduce-text">Hello, my name is</p>
-            <h1 class="hero-heading-primary">
+          <div class="hero__text-box">
+            <p class="hero__hero--introduce-text">Hello, my name is</p>
+            <h1 class="hero__hero--heading-primary">
               Yulii Shtel <br />
-              <span class="heading-secondary-color">A Front-end Developer</span>
+              <span class="hero__heading-secondary-color"
+                >A Front-end Developer</span
+              >
             </h1>
-            <p class="hero-description">
+            <p class="hero__hero-description">
               I am a software engineer specializing in building exceptional
               digital experiences and digitally pleasing static websites that
-              live on the Internet. You can check my work by clicking this
+              live on the Internet. You can check my work by following this
               <a
                 target="_blank"
                 href="https://github.com/uuuuulik?tab=repositories"
@@ -100,13 +101,13 @@
         </div>
       </section>
 
-      <!-- About -->
+      <!-- About Section -->
 
       <section id="section-about" class="section-about">
         <div class="about">
-          <div class="about-text-box">
-            <h2 class="about-heading"><span>01. </span>About Me</h2>
-            <p class="about-text-description">
+          <div class="about__text-box">
+            <h2 class="about__heading"><span>01. </span>About Me</h2>
+            <p class="about__text-description">
               My name is Yulii, and I'm a Front-end developer who enjoys
               creating things that live on the web. I'm from Ukraine, and
               currently studying web development with a focus on Front-end
@@ -121,30 +122,30 @@
               Here are a few technologies I&#39;ve been working with recently:
               <br /><br />
             </p>
-            <ul class="about-list">
+            <ul class="about__list">
               <li class="about-list-item">HTML5</li>
               <li class="about-list-item">CSS3 / SCSS / SASS</li>
               <li class="about-list-item">JavaScript (ES6+)</li>
             </ul>
           </div>
-          <div class="about-img-box">
+          <div>
             <!-- Later, make the IMG change it's color on hover + add nice square animation -->
             <img
+              class="about__img-box"
               src="/css/img/ulik_shtel.svg"
               alt="Yulii Shtel main image"
-              class="about-img"
             />
           </div>
         </div>
       </section>
 
-      <!-- Skills -->
+      <!-- Skills Section -->
 
       <section id="section-skills" class="section-skills">
         <div class="skills">
-          <div class="skills-text-box">
-            <h2 class="skills-heading"><span>02. </span>Skills</h2>
-            <p class="skills-text-description">
+          <div class="skills__text-box">
+            <h2 class="skills__heading"><span>02. </span>Skills</h2>
+            <p class="skills__text-description">
               A motivated Junior Frontend Developer with a knowledge of CSS 3
               (including Floats, Grid, Flex), semantic HTML 5 and modern and
               up-to-date JavaScript (ES6+). <br /><br />
@@ -154,56 +155,56 @@
             </p>
           </div>
           <!--  -->
-          <div class="skills-container">
+          <div class="skills__container">
             <!--  -->
-            <div class="skills-skill">
+            <div class="skills__skill">
               <img
                 src="/css/img/skills/html-5.svg"
-                class="skills-skill-logo"
+                class="skills__skill--logo"
                 alt="Logo of the skill one"
               />
-              <h3 class="skills-skill-header">Layout</h3>
-              <p class="skills-skill-text">
+              <h3 class="skills__skill--header">Layout</h3>
+              <p class="skills__skill--text">
                 I can construct the perfect layout for your website using HTML
                 and make it look visually pleasing and appealing
               </p>
             </div>
             <!--  -->
-            <div class="skills-skill">
+            <div class="skills__skill">
               <img
                 src="/css/img/skills/design.svg"
-                class="skills-skill-logo"
+                class="skills__skill--logo"
                 alt="Logo of the skill two"
               />
-              <h3 class="skills-skill-header">Design</h3>
-              <p class="skills-skill-text">
+              <h3 class="skills__skill--header">Design</h3>
+              <p class="skills__skill--text">
                 I'm using a variety of styling languages and libraries, such as
                 CSS, SCSS, Bootstrap and the list goes on!
               </p>
             </div>
             <!--  -->
-            <div class="skills-skill">
+            <div class="skills__skill">
               <img
                 src="/css/img/skills/javascript.svg"
-                class="skills-skill-logo"
+                class="skills__skill--logo"
                 alt="Logo of the skill three"
               />
-              <h3 class="skills-skill-header">JavaScript (ES6+)</h3>
-              <p class="skills-skill-text">
+              <h3 class="skills__skill--header">JavaScript (ES6+)</h3>
+              <p class="skills__skill--text">
                 I can give your site the breath of life that it needs, be it
                 date functions, APIs, responsiveness, adding and removing
                 content from the client side and so much more.
               </p>
             </div>
             <!--  -->
-            <div class="skills-skill">
+            <div class="skills__skill">
               <img
                 src="/css/img/skills/github.svg"
-                class="skills-skill-logo"
+                class="skills__skill--logo"
                 alt="Logo of the skill four"
               />
-              <h3 class="skills-skill-header">Version Control</h3>
-              <p class="skills-skill-text">
+              <h3 class="skills__skill--header">Version Control</h3>
+              <p class="skills__skill--text">
                 With the use of version control systems and remote repository
                 hosting services, such as git and GitHub respectively, I can
                 manage your site after deployments and make any necessary
@@ -215,14 +216,14 @@
         </div>
       </section>
 
-      <!-- Contact -->
+      <!-- Contact Section -->
 
       <section id="section-contact" class="section-contact">
         <div class="contact">
-          <div class="contact-text-box">
-            <p class="contact-introduce-text">03. Contact Me</p>
-            <h1 class="contact-heading-primary">Get In Touch</h1>
-            <p class="contact-description">
+          <div class="contact__text-box">
+            <p class="contact__introduce-text">03. Contact Me</p>
+            <h1 class="contact__heading-primary">Get In Touch</h1>
+            <p class="contact__description">
               I do hope my display up until this point was not a waste of your
               time. Whether you have a question or just want to say hi, I&#39;ll
               try my best to get back to you!
@@ -257,7 +258,7 @@
       <a href="https://www.linkedin.com/in/yuliishtel/" target="_blank"
         ><img
           src="/css/img/socials/LinkedIn.svg"
-          class="socials-logo"
+          class="socials__logo"
           alt="Social Media Link: LinkedIn"
       /></a>
 
@@ -265,7 +266,7 @@
         <!---->
         <img
           src="/css/img/socials/GitHub.svg"
-          class="socials-logo"
+          class="socials__logo"
           alt="Social Media Link: GitHub"
       /></a>
 
@@ -273,7 +274,7 @@
         <!---->
         <img
           src="/css/img/socials/Twitter.svg"
-          class="socials-logo"
+          class="socials__logo"
           alt="Social Media Link: Twitter"
         />
         <!---->
@@ -283,12 +284,12 @@
         <!---->
         <img
           src="/css/img/socials/Email.svg"
-          class="socials-logo"
+          class="socials__logo"
           alt="Social Media Link: Email"
       /></a>
 
       <!---->
-      <div class="socials-line"></div>
+      <div class="socials__line"></div>
       <!-- <img src="/css/img/socials/Line 1.png" /> -->
     </div>
     <script type="module" src="/js/script.js"></script>

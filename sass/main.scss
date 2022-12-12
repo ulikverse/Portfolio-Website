@@ -95,13 +95,6 @@ body {
 /* GENERAL REUSABLE COMPONENTS */
 /***************************/
 
-.hero-heading-primary {
-  font-size: 5.2rem;
-  font-weight: 600;
-  line-height: 1.05;
-  margin-bottom: 3.2rem;
-}
-
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -122,11 +115,17 @@ body {
   color: #fff;
 }
 
+.sticky {
+  position: sticky;
+  top: 0;
+  background-color: hsl(244, 28%, 10%, 0.9);
+}
+
 /***************************/
 /* HEADER */
 /***************************/
 
-.header-nav {
+.header__nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -138,56 +137,42 @@ body {
   z-index: 100;
 }
 
-.logo {
-  height: 5.4rem;
-}
-
 /***************************/
 /* Navigation */
 /***************************/
 
-.sticky {
-  // position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  background-color: hsl(244, 28%, 10%, 0.9);
-}
-
-.main-nav {
+.header__main-nav {
   font-weight: 400;
 }
 
-.main-nav a {
+.header__main-nav a {
   color: #fff;
 }
 
-.main-nav span {
+.header__main-nav span {
   color: $color-secondary;
 }
 
-.main-nav-list {
+.header__main-nav--list {
   display: flex;
   justify-content: center;
   align-items: center;
 
   list-style: none;
   gap: 3.2rem;
-
-  // ?
-  // position: sticky;
   top: 0;
 }
 
-.main-nav-list-item:link,
-.main-nav-list-item:visited {
+.header__main-nav--list-item:link,
+.header__main-nav--list-item:visited {
   font-size: 1.6rem;
   font-weight: 300;
   text-decoration: none;
   transition: all 0.4s;
 }
 
-.main-nav-list-item:hover,
-.main-nav-list-item:active {
+.header__main-nav--list-item:hover,
+.header__main-nav--list-item:active {
   color: $color-secondary;
 }
 
@@ -196,31 +181,28 @@ body {
 /***************************/
 
 .section-hero {
-  /* padding: 11rem 20rem 9.6rem 20rem; */
+  margin: 0 0 9.6rem 0;
   padding: 11rem 0 9.6rem 0;
-  margin: 2rem 0 2rem 0;
 }
 
-// .hero {
-//   display: grid;
-//   grid-template-columns: 1fr;
-//   align-items: center;
-// }
+.hero__hero--heading-primary {
+  font-size: 5.2rem;
+  font-weight: 600;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
 
-.hero-introduce-text {
+.hero__hero--introduce-text {
   color: $color-secondary;
   font-size: 1.6rem;
   margin-bottom: 2rem;
 }
 
-.heading-secondary-color {
+.hero__heading-secondary-color {
   color: $color-grey-main;
 }
 
-.hero-description {
-  /* display: grid; */
-  /* grid-template-columns: 2fr 1fr; */
-
+.hero__hero-description {
   max-width: 58.5rem;
   font-size: 1.6rem;
   font-weight: 400;
@@ -234,15 +216,9 @@ a {
   color: $color-secondary;
 }
 
-/* 
 a:hover {
   text-decoration: underline;
 }
-
-a:active {
-  color: #969696;
-  font-weight: 600;
-} */
 
 /***************************/
 /* ABOUT SECTION */
@@ -258,42 +234,35 @@ a:active {
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
+  gap: 6rem;
 }
 
-.about-img {
-  width: 100%;
-}
-
-.about-heading {
-  font-size: 4rem;
-  font-weight: 500;
-  line-height: 1.05;
-  margin-bottom: 3.2rem;
-}
-
-.about-heading {
-  color: #fff;
-}
-
-.about-heading span {
-  color: $color-secondary;
-}
-
-.about-text-box {
+.about__text-box {
   max-width: 58.5rem;
   font-size: 1.6rem;
   line-height: 1.7;
   font-weight: 400;
   color: $color-grey-main;
-  margin-bottom: 4.8rem;
 }
 
-.about-list {
+.about__heading {
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+  color: #fff;
+}
+
+.about__heading span {
+  color: $color-secondary;
+}
+
+.about__list {
   list-style: inside;
   list-style: none;
 }
 
-.about-list li::before {
+.about__list li::before {
   content: '\2022';
   color: $color-secondary;
   font-weight: light;
@@ -302,7 +271,7 @@ a:active {
   margin-left: -1em;
 }
 
-.about-img {
+.about__img-box {
   display: block;
   margin: 0 auto;
   width: 50%;
@@ -313,7 +282,7 @@ a:active {
 /***************************/
 
 .section-skills {
-  margin: 10rem 0 0 0;
+  margin: 0 0 9.6rem 0;
   padding: 11rem 0 9.6rem 0;
 }
 
@@ -324,22 +293,7 @@ a:active {
   align-items: center;
 }
 
-.skills-heading {
-  font-size: 4rem;
-  font-weight: 500;
-  line-height: 1.05;
-  margin-bottom: 3.2rem;
-}
-
-.skills-heading {
-  color: #fff;
-}
-
-.skills-heading span {
-  color: $color-secondary;
-}
-
-.skills-text-box {
+.skills__text-box {
   max-width: 58.5rem;
   font-size: 1.6rem;
   line-height: 1.7;
@@ -349,7 +303,19 @@ a:active {
   padding: 9.6rem 9.6rem 9.6rem 0;
 }
 
-.skills-container {
+.skills__heading {
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+  color: #fff;
+}
+
+.skills__heading span {
+  color: $color-secondary;
+}
+
+.skills__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -357,15 +323,15 @@ a:active {
   column-gap: 8rem;
 }
 
-.skills-skill-logo {
+.skills__skill--logo {
   margin-bottom: 1.2rem;
 }
 
-.skills-skill-header {
+.skills__skill--header {
   margin-bottom: 1.2rem;
 }
 
-.skills-skill-text {
+.skills__skill--text {
   font-size: 1.6rem;
   line-height: 1.6;
   margin-bottom: 1.2rem;
@@ -387,13 +353,17 @@ a:active {
   text-align: center;
 }
 
-.contact-introduce-text {
+.contact__introduce-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   color: $color-secondary;
   font-size: 1.6rem;
   margin-bottom: 2rem;
 }
 
-.contact-heading-primary {
+.contact__heading-primary {
   display: flex;
   font-size: 4rem;
   align-items: center;
@@ -401,20 +371,7 @@ a:active {
   margin-bottom: 1.2rem;
 }
 
-.contact-introduce-text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.contact-introduce-text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 2rem;
-}
-
-.contact-description {
+.contact__description {
   max-width: 58.5rem;
   font-size: 1.6rem;
   font-weight: 400;
@@ -457,28 +414,23 @@ a:active {
   // z-index: 1000;
 }
 
-.socials a {
-  z-index: 9999;
+// .socials a {
+//   z-index: 9999;
+// }
+
+.socials__logo {
+  transition: all 0.2s;
 }
 
-.socials-line {
-  /* height: 2px;
-  width: 20px; */
+.socials__logo:hover {
+  filter: invert(36%) sepia(77%) saturate(4320%) hue-rotate(1deg)
+    brightness(101%) contrast(104%);
+  transform: translateY(-0.3rem);
+}
 
+.socials__line {
   width: 1px;
   height: 120px;
   margin: 0px auto;
   background: $color-secondary;
-
-  /* transform: rotate(90deg); */
-}
-
-.socials-logo {
-  transition: all 0.2s;
-}
-
-.socials-logo:hover {
-  filter: invert(36%) sepia(77%) saturate(4320%) hue-rotate(1deg)
-    brightness(101%) contrast(104%);
-  transform: translateY(-0.3rem);
 }

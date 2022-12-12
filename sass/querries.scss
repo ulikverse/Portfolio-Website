@@ -46,12 +46,12 @@ display skills description at the top, while skills items at the bottom (maybe d
     flex-direction: column;
   }
 
-  .skills-text-box {
+  .skills__text-box {
     padding: 0 !important;
     margin-bottom: 3.2rem !important;
   }
 
-  .skills-container {
+  .skills__container {
     padding: 3.2rem;
   }
 }
@@ -89,9 +89,9 @@ display skills description at the top, while skills items at the bottom (maybe d
     flex-direction: column;
   }
 
-  .about-img-box {
+  .about__img-box {
     max-width: 100%;
-    min-width: 360px;
+    min-width: 20rem;
   }
 
   // Section Skills
@@ -100,12 +100,12 @@ display skills description at the top, while skills items at the bottom (maybe d
     flex-direction: column;
   }
 
-  .skills-text-box {
+  .skills__text-box {
     padding: 0 !important;
     margin-bottom: 3.2rem !important;
   }
 
-  .skills-container {
+  .skills__container {
     padding: 3.2rem;
   }
 }
@@ -141,7 +141,7 @@ display skills description at the top, while skills items at the bottom (maybe d
   }
 
   // Navigation
-  .nav-btn {
+  .nav__btn {
     display: none;
   }
 
@@ -154,10 +154,14 @@ display skills description at the top, while skills items at the bottom (maybe d
   .about {
     display: flex !important;
     flex-direction: column;
+    gap: 3.2rem;
   }
 
-  .about-img-box {
-    max-width: 100%;
+  .about__img-box {
+    display: block;
+    margin: 0 auto;
+    max-width: 50%;
+    // min-width: 25rem !important;
   }
 
   // Section Skills
@@ -166,12 +170,12 @@ display skills description at the top, while skills items at the bottom (maybe d
     flex-direction: column;
   }
 
-  .skills-text-box {
+  .skills__text-box {
     padding: 0 !important;
     margin-bottom: 3.2rem !important;
   }
 
-  .skills-container {
+  .skills__container {
     display: flex !important;
     flex-direction: column;
 
@@ -194,7 +198,7 @@ display skills description at the top, while skills items at the bottom (maybe d
     gap: 4rem !important;
   }
 
-  .socials-line {
+  .socials__line {
     display: none !important;
   }
 }
@@ -234,7 +238,7 @@ display skills description at the top, while skills items at the bottom (maybe d
   // Header
 
   // Navigation
-  .main-nav {
+  .header__main-nav {
     display: none;
   }
 
@@ -249,7 +253,7 @@ display skills description at the top, while skills items at the bottom (maybe d
     flex-direction: column;
   }
 
-  .about-img-box {
+  .about__img-box {
     max-width: 100%;
   }
 
@@ -259,12 +263,12 @@ display skills description at the top, while skills items at the bottom (maybe d
     flex-direction: column;
   }
 
-  .skills-text-box {
+  .skills__text-box {
     padding: 0 !important;
     margin-bottom: 3.2rem !important;
   }
 
-  .skills-container {
+  .skills__container {
     display: flex !important;
     flex-direction: column;
 
@@ -287,7 +291,7 @@ display skills description at the top, while skills items at the bottom (maybe d
     gap: 4rem !important;
   }
 
-  .socials-line {
+  .socials__line {
     display: none !important;
   }
 }
