@@ -1,0 +1,633 @@
+@charset "UTF-8";
+/* @font-face {
+  font-family: MacPaw Fixel, sans-serif;
+  src: url(/css/Font/MacPawFixel/MacPawFixel-VF.ttf);
+} */
+/*
+
+--- 01 TYPOGRAPHY
+
+- Font size system (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+Default: 400
+Medium: 500
+Semi-Bold: 600
+Bold: 700
+
+- Line hights
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+Large: 1.8
+
+- Letter spacing: 
+-0.5px
+0.75px
+
+--- 02 COLORS 
+
+– Primary: #141322
+- Secondary: #ff4500
+
+– Tints: 
+– Shadows: #992900
+
+– Accents: 
+– Greys: #969696
+
+--- 05 SHADOWS
+
+0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
+
+--- 06 BORDER_RADIUS
+
+Default: 9px
+Medium: 11px
+
+--- 07 WHITESPACE
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
+*/
+/* rem and em do NOT depend of htnl font-size in media queries! 1rem = 1em = 16px
+
+Use em in media querries! 
+
+Every time you want to sen up media querry, divide it by 16 and use as em unit.
+
+*/
+/***************************/
+/* BELOW 1072px (Smaller Desktops / Big Tablets) */
+/***************************/
+/*
+** 1080px || 67em ** 
+
+- header: no changes
+
+- navigation: no changes
+
+- section hero: no changes
+
+- section about: 
+make container smaller (max-width: 120rem)
+
+- section skills: 
+display skills description at the top, while skills items at the bottom (maybe display: flex; & flex-direction: column ????)
+
+- section contact: no changes
+
+- footer: no changes
+
+- socials: no changes
+*/
+@media (max-width: 67em) {
+  .section-about {
+    max-width: 80rem;
+  }
+  .skills {
+    display: flex !important;
+    flex-direction: column;
+  }
+  .skills__text-box {
+    padding: 0 !important;
+    margin-bottom: 3.2rem !important;
+  }
+  .skills__container {
+    padding: 3.2rem;
+  }
+}
+/***************************/
+/* BELOW 900px (Tablets) */
+/***************************/
+/* 
+** 900px || 56em ** 
+
+- header: no changes
+
+- navigation: no changes
+
+- section hero: no changes
+
+- section about: display about description at the top, while about IMG at the bottom
+
+- section skills: same as 67em
+
+- section contact: no changes
+
+- footer: no changes
+
+- socials: no changes
+*/
+@media (max-width: 56em) {
+  .about {
+    display: flex !important;
+    flex-direction: column;
+  }
+  .about__img-box {
+    max-width: 100%;
+    min-width: 20rem;
+  }
+  .skills {
+    display: flex !important;
+    flex-direction: column;
+  }
+  .skills__text-box {
+    padding: 0 !important;
+    margin-bottom: 3.2rem !important;
+  }
+  .skills__container {
+    padding: 3.2rem;
+  }
+}
+/***************************/
+/* BELOW 650px (Big Phones) */
+/***************************/
+/*
+- header: no changes
+
+- navigation: hide navigation
+
+- section hero: no changes
+
+- section about: same as 56em & 67em 
+
+- section skills: ++
+
+- section contact: no changes
+
+- footer: no changes
+
+- socials: ++
+*/
+@media (max-width: 40em) {
+  .main {
+    padding: 0 8rem 0 6rem !important;
+  }
+  .nav__btn {
+    display: none;
+  }
+  body {
+    position: relative;
+  }
+  .about {
+    display: flex !important;
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+  .about__img-box {
+    display: block;
+    margin: 0 auto;
+    max-width: 50%;
+  }
+  .skills {
+    display: flex !important;
+    flex-direction: column;
+  }
+  .skills__text-box {
+    padding: 0 !important;
+    margin-bottom: 3.2rem !important;
+  }
+  .skills__container {
+    display: flex !important;
+    flex-direction: column;
+    padding: 3.2rem;
+  }
+  .section-contact {
+    padding: 0 0 9.6rem 0;
+  }
+  .socials {
+    position: absolute !important;
+    bottom: 15rem !important;
+    left: 13rem !important;
+    display: flex;
+    flex-direction: row !important;
+    gap: 4rem !important;
+  }
+  .socials__line {
+    display: none !important;
+  }
+}
+/***************************/
+/* BELOW 434px (iPhones) */
+/***************************/
+/*
+** 500px || 27em ** 
+
+- header: no changes
+
+- navigation: hide navigation
+
+- section hero: no changes
+
+- section about: same as 56em & 67em 
+
+- section skills: ++
+
+- section contact: no changes
+
+- footer: no changes
+
+- socials: ++
+*/
+@media (max-width: 27em) {
+  .main {
+    padding: 0 5rem 0 6rem !important;
+  }
+  .header__main-nav {
+    display: none;
+  }
+  body {
+    position: relative;
+  }
+  .about {
+    display: flex !important;
+    flex-direction: column;
+  }
+  .about__img-box {
+    max-width: 100%;
+  }
+  .skills {
+    display: flex !important;
+    flex-direction: column;
+  }
+  .skills__text-box {
+    padding: 0 !important;
+    margin-bottom: 3.2rem !important;
+  }
+  .skills__container {
+    display: flex !important;
+    flex-direction: column;
+    padding: 3.2rem;
+  }
+  .section-contact {
+    padding: 0 0 9.6rem 0;
+  }
+  .socials {
+    position: absolute !important;
+    bottom: 15rem !important;
+    left: 7rem !important;
+    display: flex;
+    flex-direction: row !important;
+    gap: 4rem !important;
+  }
+  .socials__line {
+    display: none !important;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  /* position: relative; */
+  font-family: "Lato", sans-serif; /* 'MacPaw Fixel' */
+  font-size: 1.6rem;
+  line-height: 1;
+  font-weight: 400;
+  color: #fff;
+  background-color: #141322;
+}
+
+.main {
+  margin: 0 auto;
+  padding: 0 12rem;
+  max-width: 130rem;
+}
+
+/***************************/
+/* GENERAL REUSABLE COMPONENTS */
+/***************************/
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  background-color: transparent;
+  color: #ff4500;
+  padding: 1.4rem 4.2rem;
+  border: solid 1px #ff4500;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  transition: all 0.2s;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #e63e00;
+  color: #fff;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  background-color: hsla(244deg, 28%, 10%, 0.9);
+}
+
+/***************************/
+/* HEADER */
+/***************************/
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* Because I want header to be sticky */
+  height: 9.6rem;
+  width: 100%;
+  padding: 3.2rem 2.4rem;
+  z-index: 100;
+}
+
+/***************************/
+/* Navigation */
+/***************************/
+.header__main-nav {
+  font-weight: 400;
+}
+
+.header__main-nav a {
+  color: #fff;
+}
+
+.header__main-nav span {
+  color: #ff4500;
+}
+
+.header__main-nav--list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 3.2rem;
+  top: 0;
+}
+
+.header__main-nav--list-item:link,
+.header__main-nav--list-item:visited {
+  font-size: 1.6rem;
+  font-weight: 300;
+  text-decoration: none;
+  transition: all 0.4s;
+}
+
+.header__main-nav--list-item:hover,
+.header__main-nav--list-item:active {
+  color: #ff4500;
+}
+
+/***************************/
+/* HERO SECTION */
+/***************************/
+.section-hero {
+  margin: 0 0 9.6rem 0;
+  padding: 11rem 0 9.6rem 0;
+}
+
+.hero__hero--heading-primary {
+  font-size: 5.2rem;
+  font-weight: 600;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+
+.hero__hero--introduce-text {
+  color: #ff4500;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.hero__heading-secondary-color {
+  color: #969696;
+}
+
+.hero__hero-description {
+  max-width: 58.5rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #969696;
+  margin-bottom: 4.8rem;
+}
+
+a {
+  text-decoration: none;
+  color: #ff4500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/***************************/
+/* ABOUT SECTION */
+/***************************/
+.section-about {
+  margin: 0 0 9.6rem 0;
+  padding: 11rem 0 9.6rem 0;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+}
+
+.about__text-box {
+  max-width: 58.5rem;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  font-weight: 400;
+  color: #969696;
+}
+
+.about__heading {
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+  color: #fff;
+}
+
+.about__heading span {
+  color: #ff4500;
+}
+
+.about__list {
+  list-style: inside;
+  list-style: none;
+}
+
+.about__list li::before {
+  content: "•";
+  color: #ff4500;
+  font-weight: light;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.about__img-box {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+}
+
+/***************************/
+/* SKILLS SECTION */
+/***************************/
+.section-skills {
+  margin: 0 0 9.6rem 0;
+  padding: 11rem 0 9.6rem 0;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: 45fr 55fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills__text-box {
+  max-width: 58.5rem;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  font-weight: 400;
+  color: #969696;
+  margin-bottom: 4.8rem;
+  padding: 9.6rem 9.6rem 9.6rem 0;
+}
+
+.skills__heading {
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+  color: #fff;
+}
+
+.skills__heading span {
+  color: #ff4500;
+}
+
+.skills__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  row-gap: 4.8rem;
+  -moz-column-gap: 8rem;
+       column-gap: 8rem;
+}
+
+.skills__skill--logo {
+  margin-bottom: 1.2rem;
+}
+
+.skills__skill--header {
+  margin-bottom: 1.2rem;
+}
+
+.skills__skill--text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+  color: #969696;
+}
+
+/***************************/
+/* CONTACT SECTION */
+/***************************/
+.section-contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 11rem 20rem 9.6rem 20rem; */
+  padding: 11rem 0 9.6rem 0;
+  margin: 0 0 9.6rem 0;
+  text-align: center;
+}
+
+.contact__introduce-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff4500;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.contact__heading-primary {
+  display: flex;
+  font-size: 4rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.2rem;
+}
+
+.contact__description {
+  max-width: 58.5rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #969696;
+  margin-bottom: 4.8rem;
+}
+
+/***************************/
+/* FOOTER */
+/***************************/
+.section-footer {
+  display: grid;
+  justify-content: center;
+}
+
+.footer {
+  display: block;
+  text-decoration: none;
+  color: #969696;
+  margin-bottom: 2rem;
+}
+
+/***************************/
+/* SOCIALS */
+/***************************/
+.socials {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  /* margin-bottom: 4rem; */
+  margin-left: 4rem;
+}
+
+.socials__logo {
+  transition: all 0.2s;
+}
+
+.socials__logo:hover {
+  filter: invert(36%) sepia(77%) saturate(4320%) hue-rotate(1deg) brightness(101%) contrast(104%);
+  transform: translateY(-0.3rem);
+}
+
+.socials__line {
+  width: 1px;
+  height: 120px;
+  margin: 0px auto;
+  background: #ff4500;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlLmNzcyIsIi4uL3Nhc3MvbWFpbi5zY3NzIiwiLi4vc2Fzcy9xdWVycmllcy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLGdCQUFnQjtBQ0FoQjs7O0dBQUE7QUFLQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0NBQUE7QUNMQTs7Ozs7O0NBQUE7QUFRQSw0QkFBQTtBQUNBLGtEQUFBO0FBQ0EsNEJBQUE7QUFFQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Q0FBQTtBQXNCQTtFQUlFO0lBQ0UsZ0JBQUE7RUZvREY7RUVoREE7SUFDRSx3QkFBQTtJQUNBLHNCQUFBO0VGa0RGO0VFL0NBO0lBQ0UscUJBQUE7SUFDQSxnQ0FBQTtFRmlERjtFRTlDQTtJQUNFLGVBQUE7RUZnREY7QUFDRjtBRTdDQSw0QkFBQTtBQUNBLDBCQUFBO0FBQ0EsNEJBQUE7QUFFQTs7Ozs7Ozs7Ozs7Ozs7Ozs7O0NBQUE7QUFvQkE7RUFJRTtJQUNFLHdCQUFBO0lBQ0Esc0JBQUE7RUYwQ0Y7RUV2Q0E7SUFDRSxlQUFBO0lBQ0EsZ0JBQUE7RUZ5Q0Y7RUVyQ0E7SUFDRSx3QkFBQTtJQUNBLHNCQUFBO0VGdUNGO0VFcENBO0lBQ0UscUJBQUE7SUFDQSxnQ0FBQTtFRnNDRjtFRW5DQTtJQUNFLGVBQUE7RUZxQ0Y7QUFDRjtBRWxDQSw0QkFBQTtBQUNBLDZCQUFBO0FBQ0EsNEJBQUE7QUFFQTs7Ozs7Ozs7Ozs7Ozs7OztDQUFBO0FBa0JBO0VBSUU7SUFDRSxpQ0FBQTtFRitCRjtFRTNCQTtJQUNFLGFBQUE7RUY2QkY7RUV4QkE7SUFDRSxrQkFBQTtFRjBCRjtFRXZCQTtJQUNFLHdCQUFBO0lBQ0Esc0JBQUE7SUFDQSxXQUFBO0VGeUJGO0VFdEJBO0lBQ0UsY0FBQTtJQUNBLGNBQUE7SUFDQSxjQUFBO0VGd0JGO0VFbkJBO0lBQ0Usd0JBQUE7SUFDQSxzQkFBQTtFRnFCRjtFRWxCQTtJQUNFLHFCQUFBO0lBQ0EsZ0NBQUE7RUZv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 */
