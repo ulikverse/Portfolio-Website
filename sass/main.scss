@@ -139,8 +139,10 @@ body {
 
 .greyscale {
   filter: grayscale(50%);
-  transition: all 0.4s;
+  // transition: all 0.4s;
 }
+
+// Animations
 
 @keyframes moveInDown {
   0% {
@@ -365,6 +367,7 @@ body {
   display: block;
   margin: 0 auto;
   width: 50%;
+  border-radius: 2px;
   transition: all 0.3s;
 }
 
