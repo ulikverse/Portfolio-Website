@@ -138,7 +138,8 @@ body {
 // }
 
 .greyscale {
-  filter: grayscale(30%);
+  filter: grayscale(50%);
+  transition: all 0.4s;
 }
 
 @keyframes moveInDown {
