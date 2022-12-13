@@ -72,15 +72,12 @@ html {
 }
 
 body {
-  /* position: relative; */
-
   font-family: 'MacPaw Fixel', 'Lato', sans-serif;
   font-size: 1.6rem;
   line-height: 1;
   font-weight: 400;
   color: #fff;
   background-color: $color-primary;
-  // overflow-x: hidden;
 }
 
 .main {
@@ -95,9 +92,10 @@ body {
 
 .reveal {
   position: relative;
-  transform: translateY(150px);
+  transform: translateY(15rem);
   opacity: 0;
-  transition: 2s all ease;
+  transition: 1.2s all ease;
+  z-index: -1;
 }
 .reveal.active {
   transform: translateY(0);
@@ -192,7 +190,7 @@ body {
   height: 9.6rem;
   width: 100%;
   padding: 3.2rem 2.4rem;
-  z-index: 100;
+  z-index: 99999;
 }
 
 /***************************/
