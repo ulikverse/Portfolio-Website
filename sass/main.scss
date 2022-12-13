@@ -106,12 +106,12 @@ body {
   border-radius: 5px;
   font-size: 1.6rem;
 
-  transition: all 0.2s;
+  transition: all 0.4s;
 }
 
 .btn:hover,
 .btn:active {
-  background-color: #e63e00;
+  background-color: hsl(16, 100%, 45%, 0.8);
   color: #fff;
 }
 
@@ -119,6 +119,52 @@ body {
   position: sticky;
   top: 0;
   background-color: hsl(244, 28%, 10%, 0.9);
+}
+
+// .filter {
+//   filter: brightness(0) saturate(100%) invert(41%) sepia(60%) saturate(6011%)
+//     hue-rotate(1deg) brightness(102%) contrast(107%) opacity(40%);
+//   transform: translateY(-0.3rem);
+// }
+
+.greyscale {
+  filter: grayscale(30%);
+}
+
+@keyframes moveInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInUpSmall {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
 
 /***************************/
@@ -176,6 +222,33 @@ body {
   color: $color-secondary;
 }
 
+// Animating Navigation
+
+.header__logo-img {
+  animation-name: moveInDown;
+  animation-duration: 0.3s;
+}
+
+.nav-list-item-1 {
+  animation-name: moveInDown;
+  animation-duration: 0.5s;
+}
+
+.nav-list-item-2 {
+  animation-name: moveInDown;
+  animation-duration: 0.7s;
+}
+
+.nav-list-item-3 {
+  animation-name: moveInDown;
+  animation-duration: 0.9s;
+}
+
+.nav-list-item-btn {
+  animation-name: moveInDown;
+  animation-duration: 1.1s;
+}
+
 /***************************/
 /* HERO SECTION */
 /***************************/
@@ -211,13 +284,43 @@ body {
   margin-bottom: 4.8rem;
 }
 
-a {
+.hero_anchor {
   text-decoration: none;
   color: $color-secondary;
 }
 
-a:hover {
+.hero_anchor:hover {
   text-decoration: underline;
+  background-color: #ff4500;
+  color: #fff;
+  padding: 0.1rem;
+}
+
+// Animating Section Hero
+
+.hero__hero--introduce-text {
+  animation-name: moveInUp;
+  animation-duration: 2.1s;
+}
+
+.hero__hero--heading-primary {
+  animation-name: moveInUp;
+  animation-duration: 2.3s;
+}
+
+.hero__heading-secondary-color {
+  animation-name: moveInUp;
+  animation-duration: 2.5s;
+}
+
+.hero__hero-description {
+  animation-name: moveInUp;
+  animation-duration: 2.7s;
+}
+
+.hero-btn {
+  animation-name: moveInUp;
+  animation-duration: 2.9s;
 }
 
 /***************************/
@@ -275,6 +378,11 @@ a:hover {
   display: block;
   margin: 0 auto;
   width: 50%;
+  transition: all 0.3s;
+}
+
+.about__img-box:hover {
+  filter: none;
 }
 
 /***************************/
