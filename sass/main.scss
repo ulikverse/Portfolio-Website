@@ -121,6 +121,18 @@ body {
   background-color: hsl(244, 28%, 10%, 0.9);
 }
 
+.anchor {
+  text-decoration: none;
+  color: $color-secondary;
+}
+
+.anchor:hover {
+  text-decoration: underline;
+  background-color: #ff4500;
+  color: #fff;
+  padding: 0.1rem;
+}
+
 // .filter {
 //   filter: brightness(0) saturate(100%) invert(41%) sepia(60%) saturate(6011%)
 //     hue-rotate(1deg) brightness(102%) contrast(107%) opacity(40%);
@@ -147,18 +159,6 @@ body {
   0% {
     opacity: 0;
     transform: translateY(100px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
-}
-
-@keyframes moveInUpSmall {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
   }
 
   100% {
@@ -282,18 +282,6 @@ body {
   line-height: 1.7;
   color: $color-grey-main;
   margin-bottom: 4.8rem;
-}
-
-.hero_anchor {
-  text-decoration: none;
-  color: $color-secondary;
-}
-
-.hero_anchor:hover {
-  text-decoration: underline;
-  background-color: #ff4500;
-  color: #fff;
-  padding: 0.1rem;
 }
 
 // Animating Section Hero

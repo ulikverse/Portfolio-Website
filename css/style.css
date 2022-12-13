@@ -335,6 +335,18 @@ body {
   background-color: hsla(244deg, 28%, 10%, 0.9);
 }
 
+.anchor {
+  text-decoration: none;
+  color: #ff4500;
+}
+
+.anchor:hover {
+  text-decoration: underline;
+  background-color: #ff4500;
+  color: #fff;
+  padding: 0.1rem;
+}
+
 .greyscale {
   filter: grayscale(30%);
 }
@@ -353,16 +365,6 @@ body {
   0% {
     opacity: 0;
     transform: translateY(100px);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
-}
-@keyframes moveInUpSmall {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
   }
   100% {
     opacity: 1;
@@ -477,18 +479,6 @@ body {
   line-height: 1.7;
   color: #969696;
   margin-bottom: 4.8rem;
-}
-
-.hero_anchor {
-  text-decoration: none;
-  color: #ff4500;
-}
-
-.hero_anchor:hover {
-  text-decoration: underline;
-  background-color: #ff4500;
-  color: #fff;
-  padding: 0.1rem;
 }
 
 .hero__hero--introduce-text {
