@@ -1,10 +1,5 @@
 @charset "UTF-8";
-/* @font-face {
-  font-family: MacPaw Fixel, sans-serif;
-  src: url(/css/Font/MacPawFixel/MacPawFixel-VF.ttf);
-} */
 /*
-
 --- 01 TYPOGRAPHY
 
 - Font size system (px)
@@ -52,7 +47,6 @@ Medium: 11px
 
 - Spacing system (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-
 
 */
 /* rem and em do NOT depend of htnl font-size in media queries! 1rem = 1em = 16px
@@ -280,6 +274,10 @@ display skills description at the top, while skills items at the bottom (maybe d
     display: none !important;
   }
 }
+@font-face {
+  font-family: "MacPaw Fixel";
+  src: url(/css/Font/MacPawFixel/MacPawFixel-VF.ttf) format("truetype");
+}
 * {
   margin: 0;
   padding: 0;
@@ -293,7 +291,7 @@ html {
 
 body {
   /* position: relative; */
-  font-family: "Lato", sans-serif; /* 'MacPaw Fixel' */
+  font-family: "MacPaw Fixel", "Lato", sans-serif;
   font-size: 1.6rem;
   line-height: 1;
   font-weight: 400;
