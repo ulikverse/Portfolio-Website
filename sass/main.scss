@@ -92,11 +92,19 @@ body {
 
 .reveal {
   position: relative;
-  transform: translateY(15rem);
+  transform: translateY(10rem);
   opacity: 0;
   transition: 1.2s all ease;
   z-index: -1;
 }
+
+// .reveal-skill {
+//   position: relative;
+//   transform: translateY(5rem);
+//   opacity: 0;
+//   transition: 1.2s all ease;
+//   z-index: -1;
+// }
 
 .reveal.active {
   transform: translateY(0);
