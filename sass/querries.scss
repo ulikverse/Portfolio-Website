@@ -54,6 +54,21 @@ display skills description at the top, while skills items at the bottom (maybe d
   .skills__container {
     padding: 3.2rem;
   }
+
+  // Projects
+  .project__item {
+    grid-column: 1 / -1 !important;
+  }
+
+  .project__image {
+    max-width: 40rem !important;
+    filter: grayscale(60%) !important;
+  }
+
+  .projects__item--image {
+    grid-column: 1 / -1 !important;
+    // grid-area: 1 / 6 / 1 / 1;
+  }
 }
 
 /***************************/
@@ -107,6 +122,47 @@ display skills description at the top, while skills items at the bottom (maybe d
 
   .skills__container {
     padding: 3.2rem;
+  }
+  // Projects
+
+  .projects__item {
+    grid-row: 1 / 1;
+  }
+
+  // .project__image {
+  //   max-width: 35rem !important;
+  //   // filter: grayscale(60%);
+  // }
+}
+
+/***************************/
+/* BELOW 720px (Big Phones) */
+/***************************/
+
+/*
+- header: no changes
+
+- navigation: hide navigation button
+
+- section hero: no changes
+
+- section about: no changes
+
+- section skills: no changes
+
+- section contact: no changes
+
+- footer: no changes
+
+- socials: no changes
+*/
+
+@media (max-width: 45em) {
+  // 720px / 16px = 45em
+
+  // Navigation
+  .nav__btn {
+    display: none;
   }
 }
 
@@ -200,6 +256,43 @@ display skills description at the top, while skills items at the bottom (maybe d
 
   .socials__line {
     display: none !important;
+  }
+}
+
+/***************************/
+/* BELOW 720px (Big Phones) */
+/***************************/
+
+/*
+- header: no changes
+
+- navigation: hide navigation
+
+- section hero: no changes
+
+- section about: no changes
+
+- section skills: no changes
+
+- section contact: no changes
+
+- footer: no changes
+
+- socials: no changes
+*/
+
+@media (max-width: 33em) {
+  // 530px / 16px = 33em
+
+  // Header
+  .header__main-nav {
+    display: none;
+  }
+
+  // Projects
+  .projects__image {
+    max-width: 30rem !important;
+    border-radius: 0.5rem;
   }
 }
 

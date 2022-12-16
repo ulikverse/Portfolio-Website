@@ -95,6 +95,16 @@ display skills description at the top, while skills items at the bottom (maybe d
   .skills__container {
     padding: 3.2rem;
   }
+  .project__item {
+    grid-column: 1/-1 !important;
+  }
+  .project__image {
+    max-width: 40rem !important;
+    filter: grayscale(60%) !important;
+  }
+  .projects__item--image {
+    grid-column: 1/-1 !important;
+  }
 }
 /***************************/
 /* BELOW 900px (Tablets) */
@@ -137,6 +147,34 @@ display skills description at the top, while skills items at the bottom (maybe d
   }
   .skills__container {
     padding: 3.2rem;
+  }
+  .projects__item {
+    grid-row: 1/1;
+  }
+}
+/***************************/
+/* BELOW 720px (Big Phones) */
+/***************************/
+/*
+- header: no changes
+
+- navigation: hide navigation button
+
+- section hero: no changes
+
+- section about: no changes
+
+- section skills: no changes
+
+- section contact: no changes
+
+- footer: no changes
+
+- socials: no changes
+*/
+@media (max-width: 45em) {
+  .nav__btn {
+    display: none;
   }
 }
 /***************************/
@@ -205,6 +243,35 @@ display skills description at the top, while skills items at the bottom (maybe d
   }
   .socials__line {
     display: none !important;
+  }
+}
+/***************************/
+/* BELOW 720px (Big Phones) */
+/***************************/
+/*
+- header: no changes
+
+- navigation: hide navigation
+
+- section hero: no changes
+
+- section about: no changes
+
+- section skills: no changes
+
+- section contact: no changes
+
+- footer: no changes
+
+- socials: no changes
+*/
+@media (max-width: 33em) {
+  .header__main-nav {
+    display: none;
+  }
+  .projects__image {
+    max-width: 30rem !important;
+    border-radius: 0.5rem;
   }
 }
 /***************************/
@@ -667,7 +734,7 @@ body {
 .projects {
   display: block;
   list-style: none;
-  margin: 0 0 10rem 0;
+  margin: 5rem 0 10rem 0;
 }
 
 .projects__item {
@@ -692,6 +759,7 @@ body {
   color: #ff4500;
   font-size: 1.4rem;
   font-weight: 400;
+  opacity: 0.999;
 }
 
 .projects__item--title {
@@ -700,6 +768,7 @@ body {
   line-height: 1.05;
   color: #fff;
   margin: 1rem 0 2rem 0;
+  opacity: 0.999;
 }
 
 .projects__item--description {
@@ -719,6 +788,7 @@ body {
   margin: 2rem 0 1rem;
   list-style: none;
   color: #969696;
+  opacity: 0.999;
 }
 
 .projects__list-item:hover {
@@ -733,6 +803,7 @@ body {
   margin: 2rem 0 1rem;
   list-style: none;
   color: #969696;
+  opacity: 0.999;
 }
 
 .projects__item--links {
@@ -743,6 +814,7 @@ body {
   margin: 2rem 0 1rem;
   padding: 0px;
   list-style: none;
+  opacity: 0.999;
 }
 
 .projects__item--links-left {
@@ -753,6 +825,11 @@ body {
   margin: 2rem 0 1rem;
   padding: 0px;
   list-style: none;
+  opacity: 0.999;
+}
+
+.project__link {
+  display: inline-block;
 }
 
 .projects__item--image {
@@ -762,16 +839,23 @@ body {
 
 .projects__item--image-left {
   grid-column: 6/-1;
+  grid-area: 1/6/1/12;
+  /*grid-area: 
+  grid-row-start 
+  grid-column-start
+  grid-row-end
+  grid-column-end
+  itemname
+  */
 }
 
 .projects__image {
-  max-width: 61.5rem;
+  max-width: 55.5rem;
   border-radius: 0.5rem;
 }
 
 .projects__image:hover {
   box-shadow: 2px 2px 5px 2px rgba(201, 201, 201, 0.2);
-  filter: none;
 }
 
 .projects__item--content,
