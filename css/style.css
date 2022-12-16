@@ -95,16 +95,6 @@ display skills description at the top, while skills items at the bottom (maybe d
   .skills__container {
     padding: 3.2rem;
   }
-  .project__item {
-    grid-column: 1/-1 !important;
-  }
-  .project__image {
-    max-width: 40rem !important;
-    filter: grayscale(60%) !important;
-  }
-  .projects__item--image {
-    grid-column: 1/-1 !important;
-  }
 }
 /***************************/
 /* BELOW 900px (Tablets) */
@@ -148,9 +138,6 @@ display skills description at the top, while skills items at the bottom (maybe d
   .skills__container {
     padding: 3.2rem;
   }
-  .projects__item {
-    grid-row: 1/1;
-  }
 }
 /***************************/
 /* BELOW 720px (Big Phones) */
@@ -172,11 +159,6 @@ display skills description at the top, while skills items at the bottom (maybe d
 
 - socials: no changes
 */
-@media (max-width: 45em) {
-  .nav__btn {
-    display: none;
-  }
-}
 /***************************/
 /* BELOW 650px (Big Phones) */
 /***************************/
