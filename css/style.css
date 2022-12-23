@@ -719,21 +719,16 @@ body {
 /* CONTACT SECTION */
 /***************************/
 .contact {
-  z-index: 0;
-}
-
-.section-contact {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  /* padding: 11rem 20rem 9.6rem 20rem; */
   padding: 11rem 0 9.6rem 0;
   margin: 0 0 9.6rem 0;
   text-align: center;
+  z-index: 0;
 }
 
 .contact__introduce-text {
-  display: flex;
   align-items: center;
   justify-content: center;
   color: #ff4500;
@@ -742,7 +737,6 @@ body {
 }
 
 .contact__heading-primary {
-  display: flex;
   font-size: 4rem;
   align-items: center;
   justify-content: center;
@@ -756,6 +750,10 @@ body {
   line-height: 1.7;
   color: #969696;
   margin-bottom: 4.8rem;
+}
+
+.btn-hire {
+  position: relative;
 }
 
 /***************************/

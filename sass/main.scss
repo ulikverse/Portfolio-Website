@@ -488,36 +488,31 @@ body {
 /***************************/
 
 .contact {
-  z-index: 0;
-}
-
-.section-contact {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-
-  /* padding: 11rem 20rem 9.6rem 20rem; */
+  // background-color: aquamarine;
   padding: 11rem 0 9.6rem 0;
   margin: 0 0 9.6rem 0;
   text-align: center;
+  z-index: 0;
 }
 
 .contact__introduce-text {
-  display: flex;
   align-items: center;
   justify-content: center;
-
   color: $color-secondary;
   font-size: 1.6rem;
   margin-bottom: 2rem;
+  // z-index: 1;
 }
 
 .contact__heading-primary {
-  display: flex;
   font-size: 4rem;
   align-items: center;
   justify-content: center;
   margin-bottom: 1.2rem;
+  // z-index: 1;
 }
 
 .contact__description {
@@ -527,10 +522,14 @@ body {
   line-height: 1.7;
   color: $color-grey-main;
   margin-bottom: 4.8rem;
+  // z-index: 1;
 }
 
-// .btn-hire {
-// }
+.btn-hire {
+  position: relative;
+  // z-index: 100;
+  // background-color: #da1919;
+}
 
 /***************************/
 /* FOOTER */
