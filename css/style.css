@@ -299,6 +299,7 @@ body {
 
 ::selection {
   background: #b33000;
+  color: #fff;
 }
 
 .main {
