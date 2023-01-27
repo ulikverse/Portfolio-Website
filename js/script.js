@@ -27,4 +27,3 @@ window.addEventListener('scroll', reveal);
 // Year updated
 const year = (document.querySelector('.year').innerHTML =
   new Date().getFullYear());
-// const currentYear = new Date().getFullYear();
