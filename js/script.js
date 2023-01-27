@@ -1,9 +1,11 @@
 'use strict';
 
+// Reload trick
 if (module.hot) {
   module.hot.accept();
 }
 
+// Reveal next Section
 function reveal() {
   const reveals = document.querySelectorAll('.reveal');
 
@@ -21,3 +23,8 @@ function reveal() {
 }
 
 window.addEventListener('scroll', reveal);
+
+// Year updated
+const year = (document.querySelector('.year').innerHTML =
+  new Date().getFullYear());
+// const currentYear = new Date().getFullYear();
