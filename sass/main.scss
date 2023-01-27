@@ -1,7 +1,12 @@
 $color-primary: #141322;
 $color-secondary: #ff4500;
+$color-secondary-tint: #b33000;
 $color-ternary: #2c2b38;
 $color-grey-main: #969696;
+
+$color-light-primary: #faf7f0;
+$color-light-text-main: #181d31;
+$color-light-text-secondary: #9d9d9d;
 
 @import 'querries.scss';
 
@@ -29,6 +34,15 @@ body {
   color: #fff;
   background-color: $color-primary;
 }
+
+::selection {
+  background: $color-secondary-tint;
+}
+
+// .body-light-active {
+//   background-color: $color-light-primary;
+//   color: $color-light-text;
+// }
 
 .main {
   margin: 0 auto;
