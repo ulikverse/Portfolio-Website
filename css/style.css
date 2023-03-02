@@ -316,7 +316,6 @@ body {
   transform: translateY(2.5rem);
   opacity: 0;
   transition: 1.2s all ease;
-  z-index: -1;
 }
 
 .reveal.active {
@@ -343,6 +342,7 @@ body {
 .btn:active {
   background-color: hsla(16deg, 100%, 45%, 0.8);
   color: #fff;
+  box-shadow: 7px 5px 56px -14px #ff4500;
 }
 
 .sticky {
