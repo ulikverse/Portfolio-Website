@@ -415,6 +415,10 @@ body {
 /***************************/
 /* HEADER */
 /***************************/
+header {
+  z-index: 99999999999;
+}
+
 .header__nav {
   display: flex;
   justify-content: space-between;

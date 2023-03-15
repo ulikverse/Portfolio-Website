@@ -40,11 +40,6 @@ body {
   color: #fff;
 }
 
-// .body-light-active {
-//   background-color: $color-light-primary;
-//   color: $color-light-text;
-// }
-
 .main {
   margin: 0 auto;
   padding: 0 12rem;
@@ -60,16 +55,7 @@ body {
   transform: translateY(2.5rem);
   opacity: 0;
   transition: 1.2s all ease;
-  // z-index: -1;
 }
-
-// .reveal-skill {
-//   position: relative;
-//   transform: translateY(5rem);
-//   opacity: 0;
-//   transition: 1.2s all ease;
-//   z-index: -1;
-// }
 
 .reveal.active {
   transform: translateY(0);
@@ -117,15 +103,8 @@ body {
   padding: 0.1rem;
 }
 
-// .filter {
-//   filter: brightness(0) saturate(100%) invert(41%) sepia(60%) saturate(6011%)
-//     hue-rotate(1deg) brightness(102%) contrast(107%) opacity(40%);
-//   transform: translateY(-0.3rem);
-// }
-
 .greyscale {
   filter: grayscale(50%);
-  // transition: all 0.4s;
 }
 
 // Animations
@@ -182,6 +161,10 @@ body {
 /***************************/
 /* HEADER */
 /***************************/
+
+header {
+  z-index: 99999999999;
+}
 
 .header__nav {
   display: flex;
@@ -456,7 +439,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  // background-color: aquamarine;
   padding: 11rem 0 9.6rem 0;
   margin: 0 0 9.6rem 0;
   text-align: center;
@@ -469,7 +451,6 @@ body {
   color: $color-secondary;
   font-size: 1.6rem;
   margin-bottom: 2rem;
-  // z-index: 1;
 }
 
 .contact__heading-primary {
@@ -477,7 +458,6 @@ body {
   align-items: center;
   justify-content: center;
   margin-bottom: 1.2rem;
-  // z-index: 1;
 }
 
 .contact__description {
@@ -487,13 +467,10 @@ body {
   line-height: 1.7;
   color: $color-grey-main;
   margin-bottom: 4.8rem;
-  // z-index: 1;
 }
 
 .btn-hire {
   position: relative;
-  // z-index: 100;
-  // background-color: #da1919;
 }
 
 /***************************/
